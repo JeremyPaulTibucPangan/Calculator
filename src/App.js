@@ -92,11 +92,11 @@ export default function App() {
       <div className="CalcContainer">
         <CalcDisplay display={display} />
         <div className="ButtonContainer">
-          <CalcButton label={'÷'} onClick={() => handleOperatorClick('÷')} />
+          <CalcButton label={'DIV'} onClick={() => handleOperatorClick('÷')} />
           <CalcButton label={'7'} onClick={() => handleNumberClick('7')} />
           <CalcButton label={'8'} onClick={() => handleNumberClick('8')} />
           <CalcButton label={'9'} onClick={() => handleNumberClick('9')} />
-          <CalcButton label={'x'} onClick={() => handleOperatorClick('x')} />
+          <CalcButton label={'MUL'} onClick={() => handleOperatorClick('x')} />
           <CalcButton label={'4'} onClick={() => handleNumberClick('4')} />
           <CalcButton label={'5'} onClick={() => handleNumberClick('5')} />
           <CalcButton label={'6'} onClick={() => handleNumberClick('6')} />
@@ -104,10 +104,10 @@ export default function App() {
           <CalcButton label={'1'} onClick={() => handleNumberClick('1')} />
           <CalcButton label={'2'} onClick={() => handleNumberClick('2')} />
           <CalcButton label={'3'} onClick={() => handleNumberClick('3')} />
-          <CalcButton label={'-'} onClick={() => handleOperatorClick('-')} />
+          <CalcButton label={'SUB'} onClick={() => handleOperatorClick('-')} />
           <CalcButton label={'CLR'} onClick={clearDisplay} />
           <CalcButton label={'0'} onClick={() => handleNumberClick('0')} />
-          <CalcButton label={'='} onClick={calculateResult} />
+          <CalcButton label={'EQ'} onClick={calculateResult} />
         </div>
       </div>
     </div>
